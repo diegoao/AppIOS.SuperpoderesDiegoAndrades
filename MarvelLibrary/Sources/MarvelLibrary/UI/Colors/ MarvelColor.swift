@@ -20,7 +20,7 @@ public struct MarvelAppColor{
     public var primaryColor: Color{
         switch colorScheme {
         case .light:
-            return Color(red: 243.0/255.0, green: 144.0/255.0, blue: 0.0)
+            return Color.orange
         case .dark:
             return Color.gray
             
@@ -30,7 +30,17 @@ public struct MarvelAppColor{
     }
     
     ///Color secundario de la App
-    public var SecundaryColor = Color.white
+    public var SecundaryColor: Color{
+        switch colorScheme {
+        case .light:
+            return Color.white
+        case .dark:
+            return Color(.black)
+            
+        @unknown default:
+            return Color.white
+        }
+    }
     
     ///Color de texto
     public var TextColor1 = Color(red: 243.0/255.0, green: 144.0/255.0, blue: 0.0)
