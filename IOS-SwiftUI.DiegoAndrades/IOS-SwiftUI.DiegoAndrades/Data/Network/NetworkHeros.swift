@@ -38,3 +38,4 @@ final class NetworkHeros: NetworkHerosProtocol {
         return modelReturn
     }
 }
+

@@ -21,4 +21,15 @@ final class AppState: ObservableObject{
     init(network: NetworkHerosProtocol = NetworkHeros()){
         self.network = network
     }
+    
+    ///Leo los heroes
+//    func loadHero(){
+//        Task{
+//            let 
+//        }
+//        
+//    }
+//    
+    
+    
 }

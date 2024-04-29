@@ -27,6 +27,9 @@
 		5230C3CA2BE0282000384DBF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3C92BE0282000384DBF /* AppState.swift */; };
 		5230C3CD2BE0288E00384DBF /* MarvelLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5230C3CC2BE0288E00384DBF /* MarvelLibrary */; };
 		5230C3D02BE02AC200384DBF /* MarvelLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5230C3CF2BE02AC200384DBF /* MarvelLibrary */; };
+		5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D12BE02BF100384DBF /* ViewRouter.swift */; };
+		5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D52BE02C8800384DBF /* HeroesView.swift */; };
+		5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D72BE03A3400384DBF /* HerosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		5230C3C02BE01D1D00384DBF /* HerosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepository.swift; sourceTree = "<group>"; };
 		5230C3C22BE01D8200384DBF /* HeroUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroUseCase.swift; sourceTree = "<group>"; };
 		5230C3C92BE0282000384DBF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5230C3D12BE02BF100384DBF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		5230C3D52BE02C8800384DBF /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
+		5230C3D72BE03A3400384DBF /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 				5230C3A32BE0106000384DBF /* Presentation */,
 				5230C3AA2BE0111200384DBF /* Domain */,
 				5230C3A62BE0108900384DBF /* Data */,
+				5230C3D12BE02BF100384DBF /* ViewRouter.swift */,
 				5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */,
 				5230C37A2BE0102B00384DBF /* ContentView.swift */,
 				5230C37C2BE0102E00384DBF /* Assets.xcassets */,
@@ -171,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3C92BE0282000384DBF /* AppState.swift */,
+				5230C3D72BE03A3400384DBF /* HerosViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -274,6 +282,7 @@
 		5230C3C72BE025E500384DBF /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -425,12 +434,15 @@
 			files = (
 				5230C3C32BE01D8200384DBF /* HeroUseCase.swift in Sources */,
 				5230C3B52BE0132100384DBF /* HTTPMethods.swift in Sources */,
+				5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */,
 				5230C3C12BE01D1E00384DBF /* HerosRepository.swift in Sources */,
+				5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */,
 				5230C3CA2BE0282000384DBF /* AppState.swift in Sources */,
 				5230C37B2BE0102B00384DBF /* ContentView.swift in Sources */,
 				5230C3B82BE013D700384DBF /* NetworkHeros.swift in Sources */,
 				5230C3BC2BE0163A00384DBF /* ConstantsApp.swift in Sources */,
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
+				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
 				5230C3BA2BE0144100384DBF /* HerosModel.swift in Sources */,
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,

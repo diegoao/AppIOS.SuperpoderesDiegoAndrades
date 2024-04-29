@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct IOS_SwiftUI_DiegoAndradesApp: App {
+    
+    
+    
+    let appState = AppState() //viewModelGlobal
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewRouter()
+                .environmentObject(appState)
         }
     }
 }

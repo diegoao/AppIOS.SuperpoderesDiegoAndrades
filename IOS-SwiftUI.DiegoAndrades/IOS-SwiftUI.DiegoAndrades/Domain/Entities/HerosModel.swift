@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Result
-struct HerosModel: Codable {
+struct HerosModel: Codable, Identifiable {
     let id: Int
     let name, description: String
     let thumbnail: thumbnail
