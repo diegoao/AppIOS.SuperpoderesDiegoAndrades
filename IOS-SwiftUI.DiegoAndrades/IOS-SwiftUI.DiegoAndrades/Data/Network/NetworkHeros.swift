@@ -19,6 +19,8 @@ final class NetworkHeros: NetworkHerosProtocol {
         let urlCad = "\(ConstantsApp.URL_API)\(Endpoints.characters.rawValue)\(ConstantsApp.TS)\(ConstantsApp.APIKEY)\(ConstantsApp.HASH)"
         var request = URLRequest(url: URL(string:urlCad)!)
         request.httpMethod = HTTPMethods.get
+        request.addValue(HTTPMethods.content, forHTTPHeaderField: "Content-type")
+        
 
         //Llamamos al servidor
 

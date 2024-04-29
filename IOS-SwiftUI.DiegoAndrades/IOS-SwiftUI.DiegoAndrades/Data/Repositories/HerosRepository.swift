@@ -15,7 +15,7 @@ final class HerosRepository: HerosRepositoryProtocol {
         Network = network
     }
     
-    func getHeros(filter: String) async -> [HerosModel] {
+    func getHeros() async -> [HerosModel] {
         return await Network.getHeros()
     }
 }
