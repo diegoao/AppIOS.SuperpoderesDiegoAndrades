@@ -17,8 +17,8 @@ struct ViewRouter: View {
                 HeroesView(viewModel: HerosViewModel())
             }
             
-        case .series:
-            Text("Series")
+        case .detalles:
+            Text("detalles")
         }
      
     }

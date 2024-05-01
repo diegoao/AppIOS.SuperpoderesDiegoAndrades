@@ -10,7 +10,7 @@ import Combine
 
 
 enum AppStatus {
-    case heroes, series
+    case heroes, detalles
 }
 
 
@@ -22,14 +22,6 @@ final class AppState: ObservableObject{
         self.network = network
     }
     
-    ///Leo los heroes
-//    func loadHero(){
-//        Task{
-//            let 
-//        }
-//        
-//    }
-//    
     
     
 }

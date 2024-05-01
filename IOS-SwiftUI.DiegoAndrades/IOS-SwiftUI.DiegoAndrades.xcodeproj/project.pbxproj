@@ -31,6 +31,7 @@
 		5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D72BE03A3400384DBF /* HerosViewModel.swift */; };
 		5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46B2BE23DB400384DBF /* HerosRowView.swift */; };
 		5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46D2BE289B100384DBF /* HeroDetailView.swift */; };
+		5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4712BE2CBFB00384DBF /* DetailRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		5230C46A2BE21D4C00384DBF /* IOS-SwiftUI-DiegoAndrades-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IOS-SwiftUI-DiegoAndrades-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5230C46B2BE23DB400384DBF /* HerosRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
 		5230C46D2BE289B100384DBF /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		5230C4712BE2CBFB00384DBF /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +191,7 @@
 		5230C3A52BE0107600384DBF /* views */ = {
 			isa = PBXGroup;
 			children = (
-				5230C3C82BE025F000384DBF /* Series */,
+				5230C3C82BE025F000384DBF /*  Detalles */,
 				5230C3C72BE025E500384DBF /* Heroes */,
 			);
 			path = views;
@@ -287,16 +289,17 @@
 			children = (
 				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
 				5230C46B2BE23DB400384DBF /* HerosRowView.swift */,
-				5230C46D2BE289B100384DBF /* HeroDetailView.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
 		};
-		5230C3C82BE025F000384DBF /* Series */ = {
+		5230C3C82BE025F000384DBF /*  Detalles */ = {
 			isa = PBXGroup;
 			children = (
+				5230C46D2BE289B100384DBF /* HeroDetailView.swift */,
+				5230C4712BE2CBFB00384DBF /* DetailRowView.swift */,
 			);
-			path = Series;
+			path = " Detalles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +452,7 @@
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
 				5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */,
+				5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */,
 				5230C3BA2BE0144100384DBF /* HerosModel.swift in Sources */,
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,
