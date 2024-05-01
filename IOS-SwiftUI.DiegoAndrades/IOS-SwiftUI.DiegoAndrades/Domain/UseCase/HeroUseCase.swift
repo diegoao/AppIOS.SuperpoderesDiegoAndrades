@@ -27,13 +27,13 @@ final class HeroUseCase: HeroUseCaseProtocol{
 }
 
 //Fake
-//final class HeroUseCaseFake: HeroUseCaseProtocol{
-//    var repo: HerosRepositoryProtocol
-//    init(repo: HerosRepositoryProtocol = HerosRepository(network: NetworkHerosFake())){
-//        self.repo = repo
-//    }
-//    
-//    func getHeros(filter: String) async -> [HerosModel] {
-//        await repo.getHeros(filter: filter)
-//    }
-//}
+final class HeroUseCaseFake: HeroUseCaseProtocol{
+    var repo: HerosRepositoryProtocol
+    init(repo: HerosRepositoryProtocol = HerosRepository(network: NetworkHerosFake())){
+        self.repo = repo
+    }
+    
+    func getHeros() async -> [HerosModel] {
+        await repo.getHeros()
+    }
+}

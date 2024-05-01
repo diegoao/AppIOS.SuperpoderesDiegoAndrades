@@ -22,9 +22,9 @@ final class HerosViewModel: ObservableObject{
         print("ejecuta get heros")
         Task{
             let data = await network.getHeros()
-            print("finaliza llamada \(data.count)")
+            print("finaliza llamada")
             DispatchQueue.main.async {
-                self.heros = data
+                 self.heros = data
             }
         }
     }

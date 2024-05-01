@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct IOS_SwiftUI_DiegoAndradesApp: App {
-    
-    
-    
+
+    /// Instanciamos el viewModelGlobal
     let appState = AppState() //viewModelGlobal
-    
-    
+
     var body: some Scene {
         WindowGroup {
             ViewRouter()

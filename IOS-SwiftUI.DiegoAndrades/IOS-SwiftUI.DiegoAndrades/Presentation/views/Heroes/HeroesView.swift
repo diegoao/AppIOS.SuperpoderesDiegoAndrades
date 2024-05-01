@@ -25,16 +25,14 @@ struct HeroesView: View {
 //        }
         NavigationStack{
             List{
-                if let heros = viewModel.heros {
+                if let heros = viewModel.heros?.first?.data.results {
                     ForEach(heros){ hero in
                         //foto del heroe
-                        let _ = print("hero \(hero.name)")
-                        AsyncImage(url: URL(string: hero.name)) { imagen in
-                            
+                        AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { imagen in
                            imagen
                                 .resizable()
                                 .cornerRadius(30)
-                            
+                        Text(hero.name)
                         } placeholder: {
                             Image(systemName: "photo")
                                 .resizable()
@@ -50,7 +48,6 @@ struct HeroesView: View {
     }
 }
 
-//#Preview {
-//    HeroesView()
-//        .environmentObject(HerosViewModel(network: NetworkHeros()))
-//}
+#Preview {
+    HeroesView(viewModel: HerosViewModel(network: HeroUseCaseFake()))
+}

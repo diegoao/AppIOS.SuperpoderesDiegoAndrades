@@ -28,14 +28,46 @@ final class NetworkHeros: NetworkHerosProtocol {
             let(data, response)  = try await URLSession.shared.data(for: request)
             if let resp = response as? HTTPURLResponse{
                 if resp.statusCode == HTTPResponseCodes.SUCESS{
-                    modelReturn = try! JSONDecoder().decode([HerosModel].self, from: data)
-                    modelReturn.removeLast()
+                    
+                    modelReturn.append(try! JSONDecoder().decode(HerosModel.self, from: data))
+                    
                 }
             }
         }catch{
-            
+            print("error peticion")
         }
         return modelReturn
+    }
+}
+
+public final class NetworkHerosFake: NetworkHerosProtocol {
+    public init(){}
+    func getHeros() async -> [HerosModel] {
+        let modelos = HerosModel(data: DataClass(
+            results: [
+                Result(
+                    id: 1,
+                    name: "3-D Man",
+                    description: "SuperHeroe fake 1",
+                    thumbnail: Thumbnail(
+                        path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784",
+                        thumbnailExtension: .jpg
+                    )
+                    
+                ),
+                Result(
+                    id: 2,
+                    name: "A.I.M.",
+                    description: "AIM is a terrorist organization bent on destroying the world.",
+                    thumbnail: Thumbnail(
+                        path: "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec",
+                        thumbnailExtension: .jpg
+                    )
+                )
+            ]
+        )
+    )
+        return [modelos]
     }
 }
 

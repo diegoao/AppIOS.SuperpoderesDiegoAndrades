@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
-		5230C37B2BE0102B00384DBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C37A2BE0102B00384DBF /* ContentView.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
 		5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C3802BE0102E00384DBF /* Preview Assets.xcassets */; };
 		5230C38B2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C38A2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndrades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
-		5230C37A2BE0102B00384DBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5230C37C2BE0102E00384DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5230C37E2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndrades.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOS_SwiftUI_DiegoAndrades.entitlements; sourceTree = "<group>"; };
 		5230C3802BE0102E00384DBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,6 +72,7 @@
 		5230C3D12BE02BF100384DBF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		5230C3D52BE02C8800384DBF /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
 		5230C3D72BE03A3400384DBF /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
+		5230C46A2BE21D4C00384DBF /* IOS-SwiftUI-DiegoAndrades-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IOS-SwiftUI-DiegoAndrades-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +126,12 @@
 		5230C3772BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades */ = {
 			isa = PBXGroup;
 			children = (
+				5230C46A2BE21D4C00384DBF /* IOS-SwiftUI-DiegoAndrades-Info.plist */,
 				5230C3A32BE0106000384DBF /* Presentation */,
 				5230C3AA2BE0111200384DBF /* Domain */,
 				5230C3A62BE0108900384DBF /* Data */,
 				5230C3D12BE02BF100384DBF /* ViewRouter.swift */,
 				5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */,
-				5230C37A2BE0102B00384DBF /* ContentView.swift */,
 				5230C37C2BE0102E00384DBF /* Assets.xcassets */,
 				5230C37E2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndrades.entitlements */,
 				5230C37F2BE0102E00384DBF /* Preview Content */,
@@ -438,7 +437,6 @@
 				5230C3C12BE01D1E00384DBF /* HerosRepository.swift in Sources */,
 				5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */,
 				5230C3CA2BE0282000384DBF /* AppState.swift in Sources */,
-				5230C37B2BE0102B00384DBF /* ContentView.swift in Sources */,
 				5230C3B82BE013D700384DBF /* NetworkHeros.swift in Sources */,
 				5230C3BC2BE0163A00384DBF /* ConstantsApp.swift in Sources */,
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
@@ -608,6 +606,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IOS-SwiftUI.DiegoAndrades/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-SwiftUI-DiegoAndrades-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -617,7 +617,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -644,6 +643,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IOS-SwiftUI.DiegoAndrades/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-SwiftUI-DiegoAndrades-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -653,7 +654,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
