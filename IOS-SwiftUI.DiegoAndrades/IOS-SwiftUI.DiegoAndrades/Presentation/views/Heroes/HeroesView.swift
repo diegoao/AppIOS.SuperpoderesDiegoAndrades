@@ -14,28 +14,37 @@ struct HeroesView: View {
     @State private var filter: String = ""
     
     var body: some View {
-        ZStack{
-            Image(.fondo1)
-                .resizable()
-            VStack{
-                NavigationStack{
+        VStack{
+            Text("LISTADO DE HEROES").font(MarvelApFonts().textXS)
+            
+            
+            NavigationStack{
+
+                List{
                     
-                    List{
-                        if let heros = viewModel.heros?.first?.data.results {
-                            ForEach(heros){ hero in
-                                
-                                HerosRowView(hero: hero)
-                                
-                            }
+                    if let heros = viewModel.heros?.first?.data.results {
+                        ForEach(heros){ hero in
+                            
+                            HerosRowView(hero: hero)
+                                .listRowSeparator(.hidden)
+                                .listRowBackground(Color.white.opacity(0)) // Elimino el color de fondo de la lista
                         }
                     }
-                    
-                    .navigationBarTitle("Lista de Heroes", displayMode: .inline)
-                    
                 }
+                
+                .listStyle(PlainListStyle())
+                .background(
+                    Image("fondo1")
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.all)
+                        .opacity(0.8))
+                .background(Color.black.opacity(0.5))
+                
             }
+            
         }
-
+        
     }
 }
 #Preview {

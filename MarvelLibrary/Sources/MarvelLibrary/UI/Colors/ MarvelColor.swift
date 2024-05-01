@@ -42,6 +42,19 @@ public struct MarvelAppColor{
         }
     }
     
+    ///Color secundario de la App
+    public var TerciaryColor: Color{
+        switch colorScheme {
+        case .light:
+            return Color.red
+        case .dark:
+            return Color(.gray)
+            
+        @unknown default:
+            return Color.red
+        }
+    }
+    
     ///Color de texto
     public var TextColor1 = Color(red: 243.0/255.0, green: 144.0/255.0, blue: 0.0)
     public var TextColor2 = Color(red: 221/255, green: 99/255, blue: 0)

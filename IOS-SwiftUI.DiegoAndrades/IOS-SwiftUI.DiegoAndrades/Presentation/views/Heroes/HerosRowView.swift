@@ -12,14 +12,21 @@ struct HerosRowView: View {
     var hero: Result
     
     var body: some View {
-
+        
+        ZStack{
+            Rectangle()
+                .fill(MarvelAppColor().TerciaryColor.opacity(0.6))
+                .frame(width: 362, height: 390)
+                .cornerRadius(30)
+            
             VStack{
                 AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { photo in
                     photo
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height:  300)
                         .cornerRadius(10)
-                        .padding([.leading, . trailing], 16)
+                        .padding([.leading, . trailing], 32)
                         .opacity(0.8)
                     
                 } placeholder: {
@@ -27,17 +34,25 @@ struct HerosRowView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(10)
-                        .padding([.leading, . trailing], 16)
-                        .opacity(0.7)
+                        .padding([.leading, . trailing], 32)
+                        .opacity(1)
                 }
-
-                Text("\(hero.name)")
-                    .font(MarvelApFonts().textM)
-                    .bold()
-                    .foregroundStyle(MarvelAppColor().TextColor1)
+                
+                ZStack{
+                    Rectangle()
+                        .fill(MarvelAppColor().TerciaryColor.opacity(0.8))
+                        .frame(width:340, height: 35)
+                        .cornerRadius(30)
+                    Text("\(hero.name)")
+                        .font(MarvelApFonts().textM)
+                        .foregroundStyle(MarvelAppColor().BackgroundBox)
+                }
             }
         }
+       
     }
+       
+}
 
 #Preview {
     HerosRowView(hero:

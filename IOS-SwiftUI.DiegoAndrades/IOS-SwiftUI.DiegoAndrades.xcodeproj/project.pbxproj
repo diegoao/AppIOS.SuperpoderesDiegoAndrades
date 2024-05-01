@@ -30,6 +30,7 @@
 		5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D52BE02C8800384DBF /* HeroesView.swift */; };
 		5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D72BE03A3400384DBF /* HerosViewModel.swift */; };
 		5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46B2BE23DB400384DBF /* HerosRowView.swift */; };
+		5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46D2BE289B100384DBF /* HeroDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		5230C3D72BE03A3400384DBF /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
 		5230C46A2BE21D4C00384DBF /* IOS-SwiftUI-DiegoAndrades-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IOS-SwiftUI-DiegoAndrades-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5230C46B2BE23DB400384DBF /* HerosRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
+		5230C46D2BE289B100384DBF /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 			children = (
 				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
 				5230C46B2BE23DB400384DBF /* HerosRowView.swift */,
+				5230C46D2BE289B100384DBF /* HeroDetailView.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				5230C3BC2BE0163A00384DBF /* ConstantsApp.swift in Sources */,
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
+				5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */,
 				5230C3BA2BE0144100384DBF /* HerosModel.swift in Sources */,
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,
