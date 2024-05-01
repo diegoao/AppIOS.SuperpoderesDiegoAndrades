@@ -25,7 +25,7 @@ public struct MarvelAppColor{
             return Color.gray
             
         @unknown default:
-            return Color.purple
+            return Color.orange
         }
     }
     
@@ -49,5 +49,8 @@ public struct MarvelAppColor{
     
     ///Color  fondo caja de texto
     public var BackgroundBox = Color(red:255, green:255, blue:255, opacity: 0.8)
+    
+    // Inicializador público
+      public init() {}
 }
 

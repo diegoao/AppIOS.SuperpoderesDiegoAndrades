@@ -29,6 +29,7 @@
 		5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D12BE02BF100384DBF /* ViewRouter.swift */; };
 		5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D52BE02C8800384DBF /* HeroesView.swift */; };
 		5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D72BE03A3400384DBF /* HerosViewModel.swift */; };
+		5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46B2BE23DB400384DBF /* HerosRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		5230C3D52BE02C8800384DBF /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
 		5230C3D72BE03A3400384DBF /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
 		5230C46A2BE21D4C00384DBF /* IOS-SwiftUI-DiegoAndrades-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IOS-SwiftUI-DiegoAndrades-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5230C46B2BE23DB400384DBF /* HerosRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
+				5230C46B2BE23DB400384DBF /* HerosRowView.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */,
 				5230C3CA2BE0282000384DBF /* AppState.swift in Sources */,
 				5230C3B82BE013D700384DBF /* NetworkHeros.swift in Sources */,
+				5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */,
 				5230C3BC2BE0163A00384DBF /* ConstantsApp.swift in Sources */,
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
