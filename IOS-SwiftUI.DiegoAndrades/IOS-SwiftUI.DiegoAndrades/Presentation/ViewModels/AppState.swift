@@ -11,7 +11,7 @@ import Foundation
 
 enum AppStatus {
     case heroes
-    case detalles(id: Int)
+    case detalles(id: Int, hero: Result)
 }
 
 
@@ -25,13 +25,13 @@ final class AppState: ObservableObject{
         self.networkSeries = networkSeries
     }
     
-    func goDetail(id: Int){
+    func goDetail(id: Int, hero: Result){
         Task{
             let series = await networkSeries.getSeries(filter: id)
             
             DispatchQueue.main.async {
-                if series.isEmpty {
-                    self.status = .detalles(id: id)
+                if !series.isEmpty {
+                    self.status = .detalles(id: id, hero: hero)
                 }else{
                     print("No se han cargado datos")
                 }

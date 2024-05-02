@@ -14,26 +14,29 @@ struct HeroDetailView: View {
     var heroe: Result? // Variable de estado para almacenar el héroe seleccionado
     @State private var text: String = ""
     
-    
+
     var body: some View {
         if let hero = heroe{
             VStack(alignment: .center) {
-             
+                
                 Text("DETALLES DEL HEROE").font(MarvelApFonts().textS)
-          
+                
                 VStack{
                     DetailRowView(hero: hero)
                 }
-               
                 
                 .onAppear {
-                    text = hero.description // Asignamos hero.description a text cuando la vista aparece
+                    if hero.description.isEmpty{
+                        text = "Este héroe no tiene descripción"
+                    }else {
+                        text = hero.description // Asignamos hero.description a text cuando la vista aparece
+                    }
                 }
                 VStack{
                     Text("DESCRIPCIÓN").font(MarvelApFonts().textXS)
-                        
+                    
                 }
-            
+                
                 VStack{
                     ScrollView {
                         VStack{
@@ -43,15 +46,11 @@ struct HeroDetailView: View {
                                 .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
                                 .frame(height: 150) // Ajusta el número de líneas que quieres mostrar
                         }
-                        
-                        
                     }
                     
                     Spacer()
                 }
-
             }
-
         }
     }
 }

@@ -11,7 +11,7 @@ import MarvelLibrary
 struct HeroesView: View {
     @EnvironmentObject var appState: AppState
     @StateObject var viewModel: HerosViewModel
-    @State private var selectedHero: Result? // Variable de estado para almacenar el héroe seleccionado
+ 
     
     var body: some View {
         VStack{
@@ -26,8 +26,8 @@ struct HeroesView: View {
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.white.opacity(0)) // Elimino el color de fondo de la lista
                                 .onTapGesture {
-                                    selectedHero = hero // Almacenar el héroe seleccionado
-                                    appState.goDetail(id: hero.id)
+                                    
+                                    appState.goDetail(id: hero.id, hero: hero)
                                 }
                         }
                     }
