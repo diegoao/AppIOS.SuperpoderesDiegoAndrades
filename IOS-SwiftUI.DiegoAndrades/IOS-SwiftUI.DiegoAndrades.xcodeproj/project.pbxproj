@@ -33,6 +33,11 @@
 		5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46D2BE289B100384DBF /* HeroDetailView.swift */; };
 		5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4712BE2CBFB00384DBF /* DetailRowView.swift */; };
 		5230C4742BE4094000384DBF /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4732BE4093F00384DBF /* SeriesModel.swift */; };
+		5230C4762BE40D6900384DBF /* SeriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4752BE40D6900384DBF /* SeriesUseCase.swift */; };
+		5230C4782BE40E5600384DBF /* NetworkSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4772BE40E5600384DBF /* NetworkSeries.swift */; };
+		5230C47A2BE4160A00384DBF /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4792BE4160A00384DBF /* SeriesRepository.swift */; };
+		5230C47C2BE4165500384DBF /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C47B2BE4165500384DBF /* SeriesRepositoryProtocol.swift */; };
+		5230C47E2BE41A7300384DBF /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C47D2BE41A7300384DBF /* SeriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		5230C46D2BE289B100384DBF /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		5230C4712BE2CBFB00384DBF /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
 		5230C4732BE4093F00384DBF /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
+		5230C4752BE40D6900384DBF /* SeriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesUseCase.swift; sourceTree = "<group>"; };
+		5230C4772BE40E5600384DBF /* NetworkSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSeries.swift; sourceTree = "<group>"; };
+		5230C4792BE4160A00384DBF /* SeriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
+		5230C47B2BE4165500384DBF /* SeriesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		5230C47D2BE41A7300384DBF /* SeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +196,7 @@
 			children = (
 				5230C3C92BE0282000384DBF /* AppState.swift */,
 				5230C3D72BE03A3400384DBF /* HerosViewModel.swift */,
+				5230C47D2BE41A7300384DBF /* SeriesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -204,7 +215,6 @@
 			children = (
 				5230C3A72BE0109300384DBF /* Repositories */,
 				5230C3A82BE010A400384DBF /* Network */,
-				5230C3A92BE010AD00384DBF /* Local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3C02BE01D1D00384DBF /* HerosRepository.swift */,
+				5230C4792BE4160A00384DBF /* SeriesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -222,15 +233,9 @@
 			children = (
 				5230C3B62BE013BB00384DBF /* BaseNetwork */,
 				5230C3B72BE013D700384DBF /* NetworkHeros.swift */,
+				5230C4772BE40E5600384DBF /* NetworkSeries.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		5230C3A92BE010AD00384DBF /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		5230C3AA2BE0111200384DBF /* Domain */ = {
@@ -248,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3BD2BE016EC00384DBF /* HerosRepositoryProtocol.swift */,
+				5230C47B2BE4165500384DBF /* SeriesRepositoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3C22BE01D8200384DBF /* HeroUseCase.swift */,
+				5230C4752BE40D6900384DBF /* SeriesUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -443,7 +450,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5230C47C2BE4165500384DBF /* SeriesRepositoryProtocol.swift in Sources */,
 				5230C4742BE4094000384DBF /* SeriesModel.swift in Sources */,
+				5230C4762BE40D6900384DBF /* SeriesUseCase.swift in Sources */,
 				5230C3C32BE01D8200384DBF /* HeroUseCase.swift in Sources */,
 				5230C3B52BE0132100384DBF /* HTTPMethods.swift in Sources */,
 				5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */,
@@ -453,7 +462,9 @@
 				5230C3B82BE013D700384DBF /* NetworkHeros.swift in Sources */,
 				5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */,
 				5230C3BC2BE0163A00384DBF /* ConstantsApp.swift in Sources */,
+				5230C47E2BE41A7300384DBF /* SeriesViewModel.swift in Sources */,
 				5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */,
+				5230C47A2BE4160A00384DBF /* SeriesRepository.swift in Sources */,
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
 				5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */,
 				5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */,
@@ -461,6 +472,7 @@
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,
 				5230C3B32BE0130800384DBF /* HTTPResponseCodes.swift in Sources */,
+				5230C4782BE40E5600384DBF /* NetworkSeries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

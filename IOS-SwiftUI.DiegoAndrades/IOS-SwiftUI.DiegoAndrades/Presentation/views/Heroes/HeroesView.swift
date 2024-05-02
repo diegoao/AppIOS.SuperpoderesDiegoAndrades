@@ -27,7 +27,7 @@ struct HeroesView: View {
                                 .listRowBackground(Color.white.opacity(0)) // Elimino el color de fondo de la lista
                                 .onTapGesture {
                                     selectedHero = hero // Almacenar el héroe seleccionado
-                                    HeroDetailView(heroe: hero)
+        
                                 }
                         }
                     }

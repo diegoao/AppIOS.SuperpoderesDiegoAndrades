@@ -9,6 +9,8 @@ import SwiftUI
 import MarvelLibrary
 
 struct HeroDetailView: View {
+    
+    @StateObject var viewModel: SeriesViewModel
     var heroe: Result? // Variable de estado para almacenar el héroe seleccionado
     @State private var text: String = ""
     
@@ -57,7 +59,7 @@ struct HeroDetailView: View {
 // Vista de previsualización
 
 #Preview {
-    HeroDetailView(heroe: Result(
+    HeroDetailView(viewModel: SeriesViewModel(id:1), heroe: Result(
         id: 2,
         name: "A.I.M.",
         description: "AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.",

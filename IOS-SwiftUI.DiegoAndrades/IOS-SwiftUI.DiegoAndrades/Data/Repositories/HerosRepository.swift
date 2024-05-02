@@ -21,15 +21,15 @@ final class HerosRepository: HerosRepositoryProtocol {
 }
 
 
-// Caso Fake
-//final class HerosRepositoryFake: HerosRepositoryProtocol {
-//    private var Network: NetworkHerosProtocol
-//    
-//    init(network: NetworkHerosProtocol = NetworkHerosFake()){
-//        Network = network
-//    }
-//    
-//    func getHeros(filter: String) async -> [HerosModel] {
-//        return await Network.getHeros()
-//    }
-//}
+ // Caso Fake
+final class HerosRepositoryFake: HerosRepositoryProtocol {
+    private var Network: NetworkHerosProtocol
+    
+    init(network: NetworkHerosProtocol = NetworkHerosFake()){
+        Network = network
+    }
+    
+    func getHeros() async -> [HerosModel] {
+        return await Network.getHeros()
+    }
+}

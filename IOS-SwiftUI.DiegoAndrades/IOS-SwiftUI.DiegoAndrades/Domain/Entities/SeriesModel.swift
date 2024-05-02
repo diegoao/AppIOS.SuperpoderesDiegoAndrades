@@ -24,35 +24,8 @@ struct Resultado: Codable {
     let description: String?
     let startYear, endYear: Int
     let thumbnail: Thumbnail1
-    let creators: Creators
-}
 
-// MARK: - Creators
-struct Creators: Codable {
-    let items: [CreatorsItem]
 }
-
-// MARK: - CreatorsItem
-struct CreatorsItem: Codable {
-    let name: String
-    let role: Role
-}
-// MARK: - Role
-enum Role: String, Codable {
-    case colorist = "colorist"
-    case coloristCover = "colorist (cover)"
-    case editor = "editor"
-    case inker = "inker"
-    case letterer = "letterer"
-    case other = "other"
-    case painterCover = "painter (cover)"
-    case penciler = "penciler"
-    case pencilerCover = "penciler (cover)"
-    case penciller = "penciller"
-    case pencillerCover = "penciller (cover)"
-    case writer = "writer"
-}
-
 
 // MARK: - Thumbnail1
 struct Thumbnail1: Codable {

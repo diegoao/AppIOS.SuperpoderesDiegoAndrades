@@ -23,7 +23,7 @@ final class HerosViewModel: ObservableObject{
             let data = await network.getHeros()
             print("finaliza llamada")
             DispatchQueue.main.async {
-                 self.heros = data
+                 self.heros = data   
             }
         }
     }

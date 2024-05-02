@@ -40,6 +40,7 @@ final class NetworkHeros: NetworkHerosProtocol {
     }
 }
 
+///Clase fake de heros para pruebas y test
 public final class NetworkHerosFake: NetworkHerosProtocol {
     public init(){}
     func getHeros() async -> [HerosModel] {
