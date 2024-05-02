@@ -7,17 +7,121 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "558F88AB-E1E6-48E4-A7E9-9A5FBDD68267"
+            uuid = "BBA0D1F7-5964-4AD8-9216-AE3A5B765F01"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOS-SwiftUI.DiegoAndrades/Domain/Entities/HerosModel.swift"
+            filePath = "IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "Thumbnail"
-            landmarkType = "14">
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getSeries(filter:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BBA0D1F7-5964-4AD8-9216-AE3A5B765F01 - 16e2c20db42be11c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "BBA0D1F7-5964-4AD8-9216-AE3A5B765F01 - a07cec0957f26f7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "BBA0D1F7-5964-4AD8-9216-AE3A5B765F01 - 8825e28b3706af1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "BBA0D1F7-5964-4AD8-9216-AE3A5B765F01 - 40fa92c9f6f70c19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1797F4B-CD8F-4297-9D57-B9B7A6299283"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getSeries(filter:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1797F4B-CD8F-4297-9D57-B9B7A6299283 - 8825e28b3706adb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39">
+               </Location>
+               <Location
+                  uuid = "C1797F4B-CD8F-4297-9D57-B9B7A6299283 - 40fa92c9f6f70eb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for IOS_SwiftUI_DiegoAndrades.NetworkSeries.getSeries(filter: Swift.Int) async -&gt; Swift.Array&lt;IOS_SwiftUI_DiegoAndrades.SeriesModel&gt;"
+                  moduleName = "IOS-SwiftUI.DiegoAndrades"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Data/Network/NetworkSeries.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

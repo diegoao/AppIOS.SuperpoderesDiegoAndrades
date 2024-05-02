@@ -15,7 +15,7 @@ protocol NetworkSeriesProtocol {
 final class NetworkSeries: NetworkSeriesProtocol {
     func getSeries(filter: Int) async -> [SeriesModel] {
         var modelReturn = [SeriesModel]()
-        var id = String("/\(filter)")
+        let id = String("/\(filter)")
         let urlCad = "\(ConstantsApp.URL_API)\(Endpoints.characters.rawValue)\(id)\(Endpoints.series.rawValue)\(ConstantsApp.TS)\(ConstantsApp.APIKEY)\(ConstantsApp.HASH)"
         var request = URLRequest(url: URL(string:urlCad)!)
         request.httpMethod = HTTPMethods.get

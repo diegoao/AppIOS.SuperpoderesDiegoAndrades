@@ -6,22 +6,36 @@
 //
 
 import Foundation
-import Combine
+
 
 
 enum AppStatus {
-    case heroes, detalles
+    case heroes
+    case detalles(id: Int)
 }
 
 
 final class AppState: ObservableObject{
     @Published var status = AppStatus.heroes
     private var network : NetworkHerosProtocol
+    private var networkSeries : NetworkSeriesProtocol
     
-    init(network: NetworkHerosProtocol = NetworkHeros()){
+    init(network: NetworkHerosProtocol = NetworkHeros(), networkSeries: NetworkSeriesProtocol = NetworkSeries()){
         self.network = network
+        self.networkSeries = networkSeries
     }
     
-    
-    
+    func goDetail(id: Int){
+        Task{
+            let series = await networkSeries.getSeries(filter: id)
+            
+            DispatchQueue.main.async {
+                if series.isEmpty {
+                    self.status = .detalles(id: id)
+                }else{
+                    print("No se han cargado datos")
+                }
+            }
+        }
+    }
 }

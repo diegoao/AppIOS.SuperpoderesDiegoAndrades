@@ -17,8 +17,10 @@ struct ViewRouter: View {
                 HeroesView(viewModel: HerosViewModel())
             }
             
-        case .detalles:
-            Text("detalles")
+        case .detalles(let id):
+            withAnimation {
+                HeroDetailView(viewModel: SeriesViewModel(id: id))
+            }
         }
      
     }
