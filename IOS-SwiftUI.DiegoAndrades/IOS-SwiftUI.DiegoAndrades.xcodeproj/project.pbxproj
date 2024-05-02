@@ -32,6 +32,7 @@
 		5230C46C2BE23DB400384DBF /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46B2BE23DB400384DBF /* HerosRowView.swift */; };
 		5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46D2BE289B100384DBF /* HeroDetailView.swift */; };
 		5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4712BE2CBFB00384DBF /* DetailRowView.swift */; };
+		5230C4742BE4094000384DBF /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4732BE4093F00384DBF /* SeriesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		5230C46B2BE23DB400384DBF /* HerosRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
 		5230C46D2BE289B100384DBF /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		5230C4712BE2CBFB00384DBF /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
+		5230C4732BE4093F00384DBF /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				5230C3B92BE0144100384DBF /* HerosModel.swift */,
+				5230C4732BE4093F00384DBF /* SeriesModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5230C4742BE4094000384DBF /* SeriesModel.swift in Sources */,
 				5230C3C32BE01D8200384DBF /* HeroUseCase.swift in Sources */,
 				5230C3B52BE0132100384DBF /* HTTPMethods.swift in Sources */,
 				5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */,

@@ -15,25 +15,41 @@ struct HeroDetailView: View {
     
     var body: some View {
         if let hero = heroe{
-            VStack{
-                Text("DETALLES DEL HEROE").font(MarvelApFonts().textXS)
+            VStack(alignment: .center) {
+             
+                Text("DETALLES DEL HEROE").font(MarvelApFonts().textS)
+          
                 VStack{
                     DetailRowView(hero: hero)
                 }
-                VStack {
-                    TextField(hero.description, text: $text)
-                        .padding()
-                        .foregroundColor(.red)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .frame(maxWidth:358) // Respetamos 16 puntos por cada lado
+               
+                
+                .onAppear {
+                    text = hero.description // Asignamos hero.description a text cuando la vista aparece
+                }
+                VStack{
+                    Text("DESCRIPCIÓN").font(MarvelApFonts().textXS)
                         
                 }
-                
-                
-                NavigationStack{
-               
+            
+                VStack{
+                    ScrollView {
+                        VStack{
+                            TextEditor(text: $text)
+                                .padding()
+                                .foregroundColor(.black)
+                                .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
+                                .frame(height: 150) // Ajusta el número de líneas que quieres mostrar
+                        }
+                        
+                        
+                    }
+                    
+                    Spacer()
                 }
+
             }
+
         }
     }
 }
@@ -44,7 +60,7 @@ struct HeroDetailView: View {
     HeroDetailView(heroe: Result(
         id: 2,
         name: "A.I.M.",
-        description: "AIM is a terrorist organization bent on destroying the world.",
+        description: "AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.",
         thumbnail: Thumbnail(
             path: "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec",
             thumbnailExtension: .jpg
