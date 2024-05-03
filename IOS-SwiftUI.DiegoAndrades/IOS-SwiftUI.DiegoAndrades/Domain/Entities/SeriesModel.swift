@@ -18,7 +18,7 @@ struct DatoClass: Codable {
 }
 
 // MARK: - Result
-struct Resultado: Codable {
+struct Resultado: Codable, Identifiable {
     let id: Int
     let title: String
     let description: String?

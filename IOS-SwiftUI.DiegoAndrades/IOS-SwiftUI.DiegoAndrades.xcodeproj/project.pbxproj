@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521A42752BE5563D00197406 /* NetflixScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42742BE5563D00197406 /* NetflixScrollView.swift */; };
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
 		5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C3802BE0102E00384DBF /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521A42742BE5563D00197406 /* NetflixScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixScrollView.swift; sourceTree = "<group>"; };
 		5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndrades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
 		5230C37C2BE0102E00384DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			children = (
 				5230C46D2BE289B100384DBF /* HeroDetailView.swift */,
 				5230C4712BE2CBFB00384DBF /* DetailRowView.swift */,
+				521A42742BE5563D00197406 /* NetflixScrollView.swift */,
 			);
 			path = " Detalles";
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				5230C3C32BE01D8200384DBF /* HeroUseCase.swift in Sources */,
 				5230C3B52BE0132100384DBF /* HTTPMethods.swift in Sources */,
 				5230C3D62BE02C8800384DBF /* HeroesView.swift in Sources */,
+				521A42752BE5563D00197406 /* NetflixScrollView.swift in Sources */,
 				5230C3C12BE01D1E00384DBF /* HerosRepository.swift in Sources */,
 				5230C3D22BE02BF100384DBF /* ViewRouter.swift in Sources */,
 				5230C3CA2BE0282000384DBF /* AppState.swift in Sources */,

@@ -20,51 +20,5 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B2B2F91-BC3B-4F1B-BC14-AC1736099B6D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IOS-SwiftUI.DiegoAndrades/Presentation/views/ Detalles/HeroDetailView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "0B2B2F91-BC3B-4F1B-BC14-AC1736099B6D - 2338c4cfc25f6111"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IOS_SwiftUI_DiegoAndrades.HeroDetailView.body.getter : some"
-                  moduleName = "IOS-SwiftUI.DiegoAndrades"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Presentation/views/%20Detalles/HeroDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-               <Location
-                  uuid = "0B2B2F91-BC3B-4F1B-BC14-AC1736099B6D - 2338c4cfc25f6111"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IOS_SwiftUI_DiegoAndrades.HeroDetailView.body.getter : some"
-                  moduleName = "IOS-SwiftUI.DiegoAndrades"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookpro/Desktop/Desarrollo%20APP%20Mo%CC%81viles/IOS%20SUPERPODERES/Pra%CC%81tica/AppIOS.SuperpoderesDiegoAndrades/IOS-SwiftUI.DiegoAndrades/IOS-SwiftUI.DiegoAndrades/Presentation/views/%20Detalles/HeroDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

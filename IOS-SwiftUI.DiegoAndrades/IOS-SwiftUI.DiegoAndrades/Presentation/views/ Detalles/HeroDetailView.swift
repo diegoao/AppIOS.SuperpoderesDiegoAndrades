@@ -14,12 +14,13 @@ struct HeroDetailView: View {
     var heroe: Result? // Variable de estado para almacenar el héroe seleccionado
     @State private var text: String = ""
     
-
+    
     var body: some View {
         if let hero = heroe{
             VStack(alignment: .center) {
                 
                 Text("DETALLES DEL HEROE").font(MarvelApFonts().textS)
+                    .foregroundStyle(.white)
                 
                 VStack{
                     DetailRowView(hero: hero)
@@ -34,6 +35,7 @@ struct HeroDetailView: View {
                 }
                 VStack{
                     Text("DESCRIPCIÓN").font(MarvelApFonts().textXS)
+                        .foregroundStyle(MarvelAppColor().TextColor2)
                     
                 }
                 
@@ -42,16 +44,49 @@ struct HeroDetailView: View {
                         VStack{
                             TextEditor(text: $text)
                                 .padding()
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
-                                .frame(height: 150) // Ajusta el número de líneas que quieres mostrar
+                                .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
+                                .scrollContentBackground(.hidden)
+                               
                         }
+                        .background(Color.clear)
                     }
                     
                     Spacer()
+                    
                 }
+                
+                VStack{
+                    
+                    if let dato = viewModel.serie{
+                        ScrollView(.horizontal){
+                            LazyHStack{
+                                ForEach(dato){ series in
+                                    
+                                    NetflixScrollView(serie: series)
+ 
+                                }
+                                
+                            }
+                            .frame(height: 170)
+                        }
+                    }else{
+                        Text("No hay series")
+                    }
+                }
+                Spacer()
             }
+
+            .background(
+                Image("fondo2")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .opacity(0.8))
+            .background(Color.gray.opacity(0.5))
         }
+
     }
 }
 
