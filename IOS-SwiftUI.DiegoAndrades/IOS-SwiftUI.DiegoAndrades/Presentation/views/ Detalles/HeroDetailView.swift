@@ -20,7 +20,7 @@ struct HeroDetailView: View {
             VStack(alignment: .center) {
                 
                 Text("DETALLES DEL HEROE").font(MarvelApFonts().textS)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(MarvelAppColor().TextColor1)
                 
                 VStack{
                     DetailRowView(hero: hero)
