@@ -9,7 +9,7 @@ import SwiftUI
 import MarvelLibrary
 
 struct HeroDetailView: View {
-    
+    @EnvironmentObject var appState: AppState
     @StateObject var viewModel: SeriesViewModel
     var heroe: Result? // Variable de estado para almacenar el héroe seleccionado
     @State private var text: String = ""
@@ -18,8 +18,24 @@ struct HeroDetailView: View {
     var body: some View {
         if let hero = heroe{
             VStack(alignment: .center) {
-                Text("title2").font(MarvelApFonts().textS)
-                    .foregroundStyle(MarvelAppColor().TextColor1)
+                ZStack{
+                    Rectangle()
+                        .fill(MarvelAppColor().SecundaryColor.opacity(0.8))
+                        .frame(width:358, height: 35)
+                        .cornerRadius(10)
+                    HStack{
+                        Button(action: {
+                            appState.goheros()
+                        }, label: {
+                            Image(systemName: "chevron.backward.square.fill")
+                                .font(.system(size: 30))
+                            Text("back")
+                        })
+                        
+                        Text("title2").font(MarvelApFonts().textS)
+                            .foregroundStyle(MarvelAppColor().TextColor3)
+                    }
+                }
                 
                 VStack{
                     DetailRowView(hero: hero)
@@ -27,7 +43,7 @@ struct HeroDetailView: View {
                 
                 .onAppear {
                     if hero.description.isEmpty{
-                        text = "Este héroe no tiene descripción"
+                        text = NSLocalizedString("notdescription", comment: "")
                     }else {
                         text = hero.description // Asignamos hero.description a text cuando la vista aparece
                     }

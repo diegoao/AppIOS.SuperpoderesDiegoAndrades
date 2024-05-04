@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		521A42752BE5563D00197406 /* NetflixScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42742BE5563D00197406 /* NetflixScrollView.swift */; };
 		521A427A2BE615D400197406 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521A42782BE615D400197406 /* Localizable.strings */; };
+		521A427E2BE63FBE00197406 /*  HeroTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A427D2BE63FBE00197406 /*  HeroTip.swift */; };
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
 		5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C3802BE0102E00384DBF /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		521A42742BE5563D00197406 /* NetflixScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixScrollView.swift; sourceTree = "<group>"; };
 		521A42792BE615D400197406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		521A427B2BE615EC00197406 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		521A427D2BE63FBE00197406 /*  HeroTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " HeroTip.swift"; sourceTree = "<group>"; };
 		5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndrades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
 		5230C37C2BE0102E00384DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521A427C2BE63F9700197406 /* HeroTip */ = {
+			isa = PBXGroup;
+			children = (
+				521A427D2BE63FBE00197406 /*  HeroTip.swift */,
+			);
+			path = HeroTip;
+			sourceTree = "<group>";
+		};
 		5230C36C2BE0102B00384DBF = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +313,7 @@
 		5230C3C72BE025E500384DBF /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				521A427C2BE63F9700197406 /* HeroTip */,
 				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
 				5230C46B2BE23DB400384DBF /* HerosRowView.swift */,
 			);
@@ -478,6 +489,7 @@
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
 				5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */,
 				5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */,
+				521A427E2BE63FBE00197406 /*  HeroTip.swift in Sources */,
 				5230C3BA2BE0144100384DBF /* HerosModel.swift in Sources */,
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,

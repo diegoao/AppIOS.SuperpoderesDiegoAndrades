@@ -27,8 +27,11 @@ struct NetflixScrollView: View {
                         .cornerRadius(40)
                         .padding()
                 } placeholder: {
-                    ProgressView()
-                    
+                    Image(systemName: "photo")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(40)
+                        .padding()
                 }
             }
             VStack{
@@ -37,8 +40,6 @@ struct NetflixScrollView: View {
                     .font(MarvelApFonts().textXS)
                     .foregroundStyle(MarvelAppColor().TextColor1)
             }
-            
-            
         }
     }
 }

@@ -17,11 +17,10 @@ final class HerosViewModel: ObservableObject{
         getHeros()
     }
     
+    ///Función para cargar la lista de héroes al llamar a la vista
     func getHeros() {
-        print("ejecuta get heros")
         Task{
             let data = await network.getHeros()
-            print("finaliza llamada")
             DispatchQueue.main.async {
                  self.heros = data   
             }

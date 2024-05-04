@@ -10,4 +10,5 @@
 "title1" = "LIST OF HEROES";
 "title2" = "HERO DETAIL";
 "Description" = "DESCRIPTION";
-
+"notdescription" = "This hero has no description";
+"back" = "Back";

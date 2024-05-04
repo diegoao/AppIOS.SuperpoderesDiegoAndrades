@@ -28,7 +28,6 @@ final class AppState: ObservableObject{
     func goDetail(id: Int, hero: Result){
         Task{
             let series = await networkSeries.getSeries(filter: id)
-            
             DispatchQueue.main.async {
                 if !series.isEmpty {
                     self.status = .detalles(id: id, hero: hero)
@@ -38,4 +37,13 @@ final class AppState: ObservableObject{
             }
         }
     }
-}
+    
+    func goheros(){
+        Task{
+            DispatchQueue.main.async {
+                self.status = .heroes
+                }
+            }
+        }
+    }
+

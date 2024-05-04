@@ -17,12 +17,10 @@ final class SeriesViewModel: ObservableObject{
         self.id = id
         getSeries(id: id)
     }
-    
+    ///Función para cargar la lista de series cuando hacemos tap en un héroe
     func getSeries(id: Int) {
-        print("ejecuta get series")
         Task{
             let data = await network.getSeries(filter: id )
-            print("finaliza llamada")
             DispatchQueue.main.async {
                 self.serie = data.first?.data.results
             }

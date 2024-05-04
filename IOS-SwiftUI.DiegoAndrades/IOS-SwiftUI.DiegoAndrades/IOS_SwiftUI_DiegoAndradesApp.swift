@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct IOS_SwiftUI_DiegoAndradesApp: App {
+    
 
     /// Instanciamos el viewModelGlobal
     let appState = AppState() //viewModelGlobal
