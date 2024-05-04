@@ -23,6 +23,7 @@ struct HeroDetailView: View {
                         .fill(MarvelAppColor().SecundaryColor.opacity(0.8))
                         .frame(width:358, height: 35)
                         .cornerRadius(10)
+                        .id(0)
                     HStack{
                         Button(action: {
                             appState.goheros()
@@ -31,14 +32,17 @@ struct HeroDetailView: View {
                                 .font(.system(size: 30))
                             Text("back")
                         })
+                        .id(1)
                         
                         Text("title2").font(MarvelApFonts().textS)
                             .foregroundStyle(MarvelAppColor().TextColor3)
+                            .id(2)
                     }
                 }
                 
                 VStack{
                     DetailRowView(hero: hero)
+                        .id(3)
                 }
                 
                 .onAppear {
@@ -55,8 +59,10 @@ struct HeroDetailView: View {
                             .fill(MarvelAppColor().primaryColor.opacity(0.8))
                             .frame(width:358, height: 35)
                             .cornerRadius(10)
+                            .id(4)
                         Text("Description").font(MarvelApFonts().textXS)
                             .foregroundStyle(MarvelAppColor().TextColor4)
+                            .id(5)
                     }
                 }
                 
@@ -70,8 +76,10 @@ struct HeroDetailView: View {
                                 .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
                                 .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
                                 .scrollContentBackground(.hidden)
+                                .id(6)
                         }
                         .background(Color.clear)
+                        .id(7)
                     }
                     Spacer()
                 }
@@ -87,9 +95,11 @@ struct HeroDetailView: View {
                                 }
                             }
                             .frame(height: 170)
+                            .id(8)
                         }
                     }else{
                         Text("No hay series")
+                            .id(9)
                     }
                 }
                 Spacer()
@@ -100,7 +110,8 @@ struct HeroDetailView: View {
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
-                    .opacity(0.8))
+                    .opacity(0.8)
+                    .id(10))
             .background(Color.gray.opacity(0.5))
         }
     }
@@ -114,8 +125,6 @@ struct HeroDetailView: View {
         description: "AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.AIM is a terrorist organization bent on destroying the world.",
         thumbnail: Thumbnail(
             path: "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec",
-            thumbnailExtension: .jpg
-        )
-    )
-    )
+            thumbnailExtension: .jpg)))
+        .environmentObject(AppState())
 }

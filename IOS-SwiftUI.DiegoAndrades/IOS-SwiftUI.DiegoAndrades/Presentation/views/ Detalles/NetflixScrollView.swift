@@ -17,6 +17,7 @@ struct NetflixScrollView: View {
                 Text("\(serie.startYear)-\(serie.endYear)")
                     .font(MarvelApFonts().textXS)
                     .foregroundStyle(MarvelAppColor().TextColor1)
+                    .id(0)
             }
             VStack{
                 //Foto
@@ -26,12 +27,14 @@ struct NetflixScrollView: View {
                         .frame(width: 100, height: 100)
                         .cornerRadius(40)
                         .padding()
+                        .id(1)
                 } placeholder: {
                     Image(systemName: "photo")
                         .resizable()
                         .frame(width: 100, height: 100)
                         .cornerRadius(40)
                         .padding()
+                        .id(2)
                 }
             }
             VStack{
@@ -39,6 +42,7 @@ struct NetflixScrollView: View {
                 Text(serie.title)
                     .font(MarvelApFonts().textXS)
                     .foregroundStyle(MarvelAppColor().TextColor1)
+                    .id(3)
             }
         }
     }

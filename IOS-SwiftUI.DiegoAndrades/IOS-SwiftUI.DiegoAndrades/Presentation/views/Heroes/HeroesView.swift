@@ -16,12 +16,14 @@ struct HeroesView: View {
     var body: some View {
         VStack{
             Text("title1").font(MarvelApFonts().textXS)
+                .id(0)
             NavigationStack{
                 List{
                     if let heros = viewModel.heros?.first?.data.results {
                         ForEach(heros){ hero in
                             
                             HerosRowView(hero: hero)
+                               
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.white.opacity(0)) // Elimino el color de fondo de la lista
                                 .onTapGesture {
@@ -32,12 +34,16 @@ struct HeroesView: View {
                 }
             
                 .listStyle(PlainListStyle())
+                .id(1)
                 .background(
                     Image("fondo1")
                         .resizable()
                         .scaledToFill()
                         .edgesIgnoringSafeArea(.all)
-                        .opacity(0.8))
+                        .opacity(0.8)
+                        .id(2))
+                        
+                        
                 .background(Color.black.opacity(0.5))
                 
             }
@@ -46,5 +52,6 @@ struct HeroesView: View {
 }
 #Preview {
     HeroesView(viewModel: HerosViewModel(network: HeroUseCaseFake()))
+        .environmentObject(AppState())
   
 }

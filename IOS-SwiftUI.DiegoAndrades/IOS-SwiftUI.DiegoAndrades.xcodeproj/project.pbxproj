@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		521A42752BE5563D00197406 /* NetflixScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42742BE5563D00197406 /* NetflixScrollView.swift */; };
 		521A427A2BE615D400197406 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521A42782BE615D400197406 /* Localizable.strings */; };
-		521A427E2BE63FBE00197406 /*  HeroTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A427D2BE63FBE00197406 /*  HeroTip.swift */; };
+		521A42872BE6C23300197406 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 521A42862BE6C23300197406 /* ViewInspector */; };
+		521A42892BE6C2C100197406 /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42882BE6C2C100197406 /* ViewTest.swift */; };
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
 		5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C3802BE0102E00384DBF /* Preview Assets.xcassets */; };
 		5230C38B2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C38A2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift */; };
-		5230C3952BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3942BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITests.swift */; };
-		5230C3972BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3962BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift */; };
 		5230C3B12BE011A300384DBF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3B02BE011A300384DBF /* Endpoints.swift */; };
 		5230C3B32BE0130800384DBF /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3B22BE0130800384DBF /* HTTPResponseCodes.swift */; };
 		5230C3B52BE0132100384DBF /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3B42BE0132100384DBF /* HTTPMethods.swift */; };
@@ -51,20 +50,13 @@
 			remoteGlobalIDString = 5230C3742BE0102B00384DBF;
 			remoteInfo = "IOS-SwiftUI.DiegoAndrades";
 		};
-		5230C3912BE0102E00384DBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5230C36D2BE0102B00384DBF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5230C3742BE0102B00384DBF;
-			remoteInfo = "IOS-SwiftUI.DiegoAndrades";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		521A42742BE5563D00197406 /* NetflixScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixScrollView.swift; sourceTree = "<group>"; };
 		521A42792BE615D400197406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		521A427B2BE615EC00197406 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		521A427D2BE63FBE00197406 /*  HeroTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " HeroTip.swift"; sourceTree = "<group>"; };
+		521A42882BE6C2C100197406 /* ViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
 		5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndrades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
 		5230C37C2BE0102E00384DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,9 +64,6 @@
 		5230C3802BE0102E00384DBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5230C3862BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndradesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C38A2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesTests.swift; sourceTree = "<group>"; };
-		5230C3902BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndradesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5230C3942BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesUITests.swift; sourceTree = "<group>"; };
-		5230C3962BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5230C3B02BE011A300384DBF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5230C3B22BE0130800384DBF /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
 		5230C3B42BE0132100384DBF /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
@@ -115,33 +104,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5230C38D2BE0102E00384DBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				521A42872BE6C23300197406 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		521A427C2BE63F9700197406 /* HeroTip */ = {
-			isa = PBXGroup;
-			children = (
-				521A427D2BE63FBE00197406 /*  HeroTip.swift */,
-			);
-			path = HeroTip;
-			sourceTree = "<group>";
-		};
 		5230C36C2BE0102B00384DBF = {
 			isa = PBXGroup;
 			children = (
 				5230C3772BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades */,
 				5230C3892BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesTests */,
-				5230C3932BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests */,
 				5230C3762BE0102B00384DBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,7 +125,6 @@
 			children = (
 				5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */,
 				5230C3862BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesTests.xctest */,
-				5230C3902BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,17 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				5230C38A2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift */,
+				521A42882BE6C2C100197406 /* ViewTest.swift */,
 			);
 			path = "IOS-SwiftUI.DiegoAndradesTests";
-			sourceTree = "<group>";
-		};
-		5230C3932BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5230C3942BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITests.swift */,
-				5230C3962BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift */,
-			);
-			path = "IOS-SwiftUI.DiegoAndradesUITests";
 			sourceTree = "<group>";
 		};
 		5230C3A32BE0106000384DBF /* Presentation */ = {
@@ -313,7 +278,6 @@
 		5230C3C72BE025E500384DBF /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
-				521A427C2BE63F9700197406 /* HeroTip */,
 				5230C3D52BE02C8800384DBF /* HeroesView.swift */,
 				5230C46B2BE23DB400384DBF /* HerosRowView.swift */,
 			);
@@ -369,27 +333,12 @@
 				5230C3882BE0102E00384DBF /* PBXTargetDependency */,
 			);
 			name = "IOS-SwiftUI.DiegoAndradesTests";
+			packageProductDependencies = (
+				521A42862BE6C23300197406 /* ViewInspector */,
+			);
 			productName = "IOS-SwiftUI.DiegoAndradesTests";
 			productReference = 5230C3862BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5230C38F2BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5230C3A02BE0102E00384DBF /* Build configuration list for PBXNativeTarget "IOS-SwiftUI.DiegoAndradesUITests" */;
-			buildPhases = (
-				5230C38C2BE0102E00384DBF /* Sources */,
-				5230C38D2BE0102E00384DBF /* Frameworks */,
-				5230C38E2BE0102E00384DBF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5230C3922BE0102E00384DBF /* PBXTargetDependency */,
-			);
-			name = "IOS-SwiftUI.DiegoAndradesUITests";
-			productName = "IOS-SwiftUI.DiegoAndradesUITests";
-			productReference = 5230C3902BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -408,10 +357,6 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 5230C3742BE0102B00384DBF;
 					};
-					5230C38F2BE0102E00384DBF = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 5230C3742BE0102B00384DBF;
-					};
 				};
 			};
 			buildConfigurationList = 5230C3702BE0102B00384DBF /* Build configuration list for PBXProject "IOS-SwiftUI.DiegoAndrades" */;
@@ -426,6 +371,7 @@
 			mainGroup = 5230C36C2BE0102B00384DBF;
 			packageReferences = (
 				5230C3CE2BE02AC200384DBF /* XCLocalSwiftPackageReference "../MarvelLibrary" */,
+				521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 5230C3762BE0102B00384DBF /* Products */;
 			projectDirPath = "";
@@ -433,7 +379,6 @@
 			targets = (
 				5230C3742BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades */,
 				5230C3852BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesTests */,
-				5230C38F2BE0102E00384DBF /* IOS-SwiftUI.DiegoAndradesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -450,13 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5230C3842BE0102E00384DBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5230C38E2BE0102E00384DBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,7 +427,6 @@
 				5230C3D82BE03A3400384DBF /* HerosViewModel.swift in Sources */,
 				5230C46E2BE289B200384DBF /* HeroDetailView.swift in Sources */,
 				5230C4722BE2CBFB00384DBF /* DetailRowView.swift in Sources */,
-				521A427E2BE63FBE00197406 /*  HeroTip.swift in Sources */,
 				5230C3BA2BE0144100384DBF /* HerosModel.swift in Sources */,
 				5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */,
 				5230C3BE2BE016ED00384DBF /* HerosRepositoryProtocol.swift in Sources */,
@@ -502,16 +439,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521A42892BE6C2C100197406 /* ViewTest.swift in Sources */,
 				5230C38B2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5230C38C2BE0102E00384DBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5230C3952BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITests.swift in Sources */,
-				5230C3972BE0102E00384DBF /* IOS_SwiftUI_DiegoAndradesUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,11 +451,6 @@
 			isa = PBXTargetDependency;
 			target = 5230C3742BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades */;
 			targetProxy = 5230C3872BE0102E00384DBF /* PBXContainerItemProxy */;
-		};
-		5230C3922BE0102E00384DBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5230C3742BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades */;
-			targetProxy = 5230C3912BE0102E00384DBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -775,48 +699,6 @@
 			};
 			name = Release;
 		};
-		5230C3A12BE0102E00384DBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "d.a.o.IOS-SwiftUI-DiegoAndradesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "IOS-SwiftUI.DiegoAndrades";
-			};
-			name = Debug;
-		};
-		5230C3A22BE0102E00384DBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "d.a.o.IOS-SwiftUI-DiegoAndradesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "IOS-SwiftUI.DiegoAndrades";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -847,15 +729,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5230C3A02BE0102E00384DBF /* Build configuration list for PBXNativeTarget "IOS-SwiftUI.DiegoAndradesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5230C3A12BE0102E00384DBF /* Debug */,
-				5230C3A22BE0102E00384DBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -865,7 +738,23 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		521A42862BE6C23300197406 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
 		5230C3C52BE025C900384DBF /* MarvelLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MarvelLibrary;

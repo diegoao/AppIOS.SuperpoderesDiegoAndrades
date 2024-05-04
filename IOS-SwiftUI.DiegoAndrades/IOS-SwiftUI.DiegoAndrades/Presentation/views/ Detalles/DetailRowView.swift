@@ -8,24 +8,24 @@
 import SwiftUI
 import MarvelLibrary
 
+/// Se crea componente imagen + nombre del heroe para la vista de detalles
 struct DetailRowView: View {
     var hero: Result
     
     var body: some View {
         
         ZStack(){
-        
-
-            
             VStack{
                 ZStack{
                     Rectangle()
                         .fill(MarvelAppColor().primaryColor.opacity(0.8))
                         .frame(width:358, height: 35)
                         .cornerRadius(10)
+                        .id(0)
                     Text("\(hero.name)")
                         .font(MarvelApFonts().textM)
                         .foregroundStyle(MarvelAppColor().TextColor4)
+                        .id(1)
                     }
                 AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { photo in
                     photo
@@ -35,6 +35,7 @@ struct DetailRowView: View {
                         .cornerRadius(10)
                         .padding([.leading, . trailing], 32)
                         .opacity(0.8)
+                        .id(2)
                     
                 } placeholder: {
                     Image(systemName: "photo")
@@ -43,9 +44,8 @@ struct DetailRowView: View {
                         .cornerRadius(10)
                         .padding([.leading, . trailing], 32)
                         .opacity(1)
+                        .id(3)
                 }
-                
-                
 
             }
         }

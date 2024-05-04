@@ -20,6 +20,7 @@ struct HerosRowView: View {
                     .fill(MarvelAppColor().TerciaryColor.opacity(0.6))
                     .frame(width: 362, height: 480)
                     .cornerRadius(30)
+                    .id(0)
                 
                 
                 VStack{
@@ -32,6 +33,7 @@ struct HerosRowView: View {
                             Text("\(hero.name)")
                                 .font(MarvelApFonts().textM)
                                 .foregroundStyle(MarvelAppColor().TextColor4)
+                                .id(1)
                         }
                     }
                     
@@ -45,6 +47,7 @@ struct HerosRowView: View {
                                 .cornerRadius(10)
                                 .padding([.leading, . trailing], 32)
                                 .opacity(0.8)
+                                .id(2)
                             
                         } placeholder: {
                             Image(systemName: "photo")
@@ -54,6 +57,7 @@ struct HerosRowView: View {
                                 .cornerRadius(10)
                                 .padding([.leading, . trailing], 32)
                                 .opacity(1)
+                                .id(3)
                         }
                     
                     }
@@ -68,9 +72,11 @@ struct HerosRowView: View {
                                     .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
                                     .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
                                     .scrollContentBackground(.hidden)
+                                    .id(4)
                                 
                             }
                             .background(Color.clear)
+                            .id(5)
                         }
                         Spacer()
                         
