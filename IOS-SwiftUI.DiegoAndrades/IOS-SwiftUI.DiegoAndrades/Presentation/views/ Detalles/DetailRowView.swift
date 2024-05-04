@@ -25,7 +25,7 @@ struct DetailRowView: View {
                         .cornerRadius(10)
                     Text("\(hero.name)")
                         .font(MarvelApFonts().textM)
-                        .foregroundStyle(MarvelAppColor().BackgroundBox)
+                        .foregroundStyle(MarvelAppColor().TextColor4)
                     }
                 AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { photo in
                     photo

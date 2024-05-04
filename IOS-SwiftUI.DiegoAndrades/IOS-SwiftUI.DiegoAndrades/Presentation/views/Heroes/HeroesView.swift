@@ -15,7 +15,7 @@ struct HeroesView: View {
     
     var body: some View {
         VStack{
-            Text("LISTADO DE HEROES").font(MarvelApFonts().textXS)
+            Text("title1").font(MarvelApFonts().textXS)
             NavigationStack{
                 List{
                     

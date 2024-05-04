@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		521A42752BE5563D00197406 /* NetflixScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42742BE5563D00197406 /* NetflixScrollView.swift */; };
+		521A427A2BE615D400197406 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521A42782BE615D400197406 /* Localizable.strings */; };
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
 		5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C3802BE0102E00384DBF /* Preview Assets.xcassets */; };
@@ -60,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		521A42742BE5563D00197406 /* NetflixScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixScrollView.swift; sourceTree = "<group>"; };
+		521A42792BE615D400197406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		521A427B2BE615EC00197406 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-SwiftUI.DiegoAndrades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_SwiftUI_DiegoAndradesApp.swift; sourceTree = "<group>"; };
 		5230C37C2BE0102E00384DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 				5230C37C2BE0102E00384DBF /* Assets.xcassets */,
 				5230C37E2BE0102E00384DBF /* IOS_SwiftUI_DiegoAndrades.entitlements */,
 				5230C37F2BE0102E00384DBF /* Preview Content */,
+				521A42782BE615D400197406 /* Localizable.strings */,
 			);
 			path = "IOS-SwiftUI.DiegoAndrades";
 			sourceTree = "<group>";
@@ -406,6 +410,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 5230C36C2BE0102B00384DBF;
 			packageReferences = (
@@ -428,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5230C3812BE0102E00384DBF /* Preview Assets.xcassets in Resources */,
+				521A427A2BE615D400197406 /* Localizable.strings in Resources */,
 				5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +517,18 @@
 			targetProxy = 5230C3912BE0102E00384DBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		521A42782BE615D400197406 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521A42792BE615D400197406 /* en */,
+				521A427B2BE615EC00197406 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5230C3982BE0102E00384DBF /* Debug */ = {

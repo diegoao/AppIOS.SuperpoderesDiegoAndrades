@@ -14,18 +14,15 @@ struct HerosRowView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading ){
-        
+            
             Rectangle()
                 .fill(MarvelAppColor().TerciaryColor.opacity(0.6))
                 .frame(width: 362, height: 480)
                 .cornerRadius(30)
-              
-    
-            VStack{
-                
-                
+            
+            
+            VStack{  
                 VStack{
-                    
                     ZStack{
                         Rectangle()
                             .fill(MarvelAppColor().TerciaryColor.opacity(0.8))
@@ -33,9 +30,8 @@ struct HerosRowView: View {
                             .cornerRadius(30)
                         Text("\(hero.name)")
                             .font(MarvelApFonts().textM)
-                            .foregroundStyle(MarvelAppColor().BackgroundBox)
+                            .foregroundStyle(MarvelAppColor().TextColor4)
                     }
-                    
                 }
                 
                 VStack{
@@ -59,52 +55,47 @@ struct HerosRowView: View {
                             .opacity(1)
                     }
                 }
-            
-                    VStack{
-                        ScrollView {
-                            VStack{
-                                TextEditor(text: $text)
-                                    .padding()
-                                    .foregroundColor(.white)
-                                    .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
-                                    .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
-                                    .scrollContentBackground(.hidden)
-                                
-                            }
-                            .background(Color.clear)
+                
+                VStack{
+                    ScrollView {
+                        VStack{
+                            TextEditor(text: $text)
+                                .padding()
+                                .foregroundColor(MarvelAppColor().TextColor4)
+                                .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
+                                .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
+                                .scrollContentBackground(.hidden)
+                            
                         }
-                        Spacer()
-                        
+                        .background(Color.clear)
                     }
-                
+                    Spacer()
                 }
-                .padding(.top, 20)
-                .onAppear {
-                    if hero.description.isEmpty{
-                        text = "Este héroe no tiene descripción"
-                    }else {
-                        text = hero.description // Asignamos hero.description a text cuando la vista aparece
-                    }
+            }
+            .padding(.top, 20)
+            .onAppear {
+                if hero.description.isEmpty{
+                    text = "Este héroe no tiene descripción"
+                }else {
+                    text = hero.description // Asignamos hero.description a text cuando la vista aparece
                 }
-                
-                
-            
+            }
         }
     }
 }
 
 #Preview {
     HerosRowView(hero:
-            Result(
-                id: 1,
-                name: "3-D Man",
-                description: "SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1",
-                thumbnail: Thumbnail(
-                    path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784",
-                    thumbnailExtension: .jpg
-                )
-                
-            )
-        )
-        
+                    Result(
+                        id: 1,
+                        name: "3-D Man",
+                        description: "SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1SuperHeroe fake 1",
+                        thumbnail: Thumbnail(
+                            path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784",
+                            thumbnailExtension: .jpg
+                        )
+                        
+                    )
+    )
+    
 }

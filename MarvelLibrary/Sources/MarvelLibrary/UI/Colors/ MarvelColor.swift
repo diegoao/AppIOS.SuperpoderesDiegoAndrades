@@ -59,6 +59,7 @@ public struct MarvelAppColor{
     public var TextColor1 = Color(red: 243.0/255.0, green: 144.0/255.0, blue: 0.0)
     public var TextColor2 = Color(red: 221/255, green: 99/255, blue: 0)
     public var TextColor3 = Color(.black)
+    public var TextColor4 = Color(.white)
     
     ///Color  fondo caja de texto
     public var BackgroundBox = Color(red:255, green:255, blue:255, opacity: 0.8)

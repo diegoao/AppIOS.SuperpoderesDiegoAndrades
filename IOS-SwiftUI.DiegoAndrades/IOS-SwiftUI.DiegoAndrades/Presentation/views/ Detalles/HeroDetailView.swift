@@ -18,8 +18,7 @@ struct HeroDetailView: View {
     var body: some View {
         if let hero = heroe{
             VStack(alignment: .center) {
-                
-                Text("DETALLES DEL HEROE").font(MarvelApFonts().textS)
+                Text("title2").font(MarvelApFonts().textS)
                     .foregroundStyle(MarvelAppColor().TextColor1)
                 
                 VStack{
@@ -33,11 +32,18 @@ struct HeroDetailView: View {
                         text = hero.description // Asignamos hero.description a text cuando la vista aparece
                     }
                 }
+                
                 VStack{
-                    Text("DESCRIPCIÓN").font(MarvelApFonts().textXS)
-                        .foregroundStyle(MarvelAppColor().TextColor2)
-                    
+                    ZStack{
+                        Rectangle()
+                            .fill(MarvelAppColor().primaryColor.opacity(0.8))
+                            .frame(width:358, height: 35)
+                            .cornerRadius(10)
+                        Text("Description").font(MarvelApFonts().textXS)
+                            .foregroundStyle(MarvelAppColor().TextColor4)
+                    }
                 }
+                
                 
                 VStack{
                     ScrollView {
@@ -48,26 +54,21 @@ struct HeroDetailView: View {
                                 .frame(maxWidth: 358, maxHeight: .infinity) // Usamos .infinity para permitir que el TextEditor crezca verticalmente
                                 .frame(height: 110) // Ajusta el número de líneas que quieres mostrar
                                 .scrollContentBackground(.hidden)
-                               
                         }
                         .background(Color.clear)
                     }
-                    
                     Spacer()
-                    
                 }
                 
                 VStack{
-                    
                     if let dato = viewModel.serie{
                         ScrollView(.horizontal){
                             LazyHStack{
                                 ForEach(dato){ series in
                                     
                                     NetflixScrollView(serie: series)
- 
+                                    
                                 }
-                                
                             }
                             .frame(height: 170)
                         }
@@ -77,7 +78,7 @@ struct HeroDetailView: View {
                 }
                 Spacer()
             }
-
+            
             .background(
                 Image("fondo2")
                     .resizable()
@@ -86,12 +87,10 @@ struct HeroDetailView: View {
                     .opacity(0.8))
             .background(Color.gray.opacity(0.5))
         }
-
     }
 }
 
 // Vista de previsualización
-
 #Preview {
     HeroDetailView(viewModel: SeriesViewModel(id:1), heroe: Result(
         id: 2,
