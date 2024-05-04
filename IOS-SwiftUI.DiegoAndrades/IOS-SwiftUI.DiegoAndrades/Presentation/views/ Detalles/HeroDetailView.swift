@@ -91,14 +91,15 @@ struct HeroDetailView: View {
                                 ForEach(dato){ series in
                                     
                                     NetflixScrollView(serie: series)
-                                    
+
                                 }
                             }
-                            .frame(height: 170)
                             .id(8)
+                            .frame(height: 170)
                         }
+                        
                     }else{
-                        Text("No hay series")
+                        Text("notseries")
                             .id(9)
                     }
                 }
