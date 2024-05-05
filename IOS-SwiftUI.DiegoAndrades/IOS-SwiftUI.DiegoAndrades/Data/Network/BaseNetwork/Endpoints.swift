@@ -8,7 +8,6 @@
 import Foundation
 
 ///Endpoints de la app
-///
 enum Endpoints: String {
     case characters = "/v1/public/characters"
     case series = "/series"

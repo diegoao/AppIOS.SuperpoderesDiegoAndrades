@@ -13,6 +13,52 @@ struct HerosRowView: View {
     @State private var text: String = ""
 
     var body: some View {
+        
+        #if os(watchOS)
+        
+        VStack{
+            
+            VStack {
+                ZStack(alignment:.center){
+                    Rectangle()
+                        .fill(MarvelAppColor().TerciaryColor.opacity(0.8))
+                        .frame(width:180, height: 38)
+                        .cornerRadius(30)
+                        .id(6)
+                    Text("\(hero.name)")
+                        .font(MarvelApFonts().textXS)
+                        .foregroundStyle(MarvelAppColor().TextColor4)
+                        .id(7)
+                }
+            }
+            
+            
+            VStack{
+                AsyncImage(url: URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension.rawValue)" )) { photo in
+                    photo
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 120, height:  120)
+                        .cornerRadius(10)
+                        .padding([.leading, . trailing], 32)
+                        .opacity(0.8)
+                        .id(8)
+                    
+                } placeholder: {
+                    Image(systemName: "photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 120, height:  120)
+                        .cornerRadius(10)
+                        .padding([.leading, . trailing], 4)
+                        .opacity(1)
+                        .id(9)
+                }
+                
+            }
+        }
+        
+        #else
     
             ZStack(alignment: .topLeading ){
                 
@@ -61,8 +107,6 @@ struct HerosRowView: View {
                         }
                     
                     }
-                    
- 
                     VStack{
                         ScrollView {
                             VStack{
@@ -81,11 +125,10 @@ struct HerosRowView: View {
                         Spacer()
                         
                     }
+
                     
                 }
                 .padding(.top, 20)
-                //TIP
-                
                 .onAppear {
                     if hero.description.isEmpty{
                         text = NSLocalizedString("notdescription", comment: "")
@@ -94,6 +137,7 @@ struct HerosRowView: View {
                     }
                 }
             }
+        #endif
         }
 }
 
