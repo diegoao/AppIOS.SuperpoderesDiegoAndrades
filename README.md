@@ -1,4 +1,4 @@
-# Practica AppIOS.SuperpoderesDiegoAndrades
+# Práctica AppIOS.SuperpoderesDiegoAndrades
 
 Práctica realizada para el módulo de Programación IOS SUPERPODERES por Diego Andrades.
 
