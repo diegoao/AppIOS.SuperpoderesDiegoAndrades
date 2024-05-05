@@ -5,7 +5,8 @@ Práctica realizada para el módulo de Programación IOS SUPERPODERES por Diego 
 **KeepCoding - Profesor Jose Luis.**
 
 ## La práctica contiene:
-- Creación de Vire con SwiftUI.
+- Creación de View con SwiftUI.
+- Aplicación Multiplataforma.
 - Las llamadas de red las he realizado con Async Await.
 - He creado mi propia libreria para crear las fuentes, colores y modificadores para mi app.
 - Internacionalización de los literales (traducciones) en Español e inglés.
@@ -39,7 +40,7 @@ ella.
 héroe y además una lista "Netflix" personalizada
 en la parte inferior en la cual podemos hacer
 Scroll en horizontal y ver todas las series
-en la que aperece el héroe
+en la que aperece el héroe.
 ```
 ```
 3. Como la app es multiplataforma se han adaptado
