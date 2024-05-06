@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,7 +41,6 @@
 		521A42BD2BE7571B00197406 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C46D2BE289B100384DBF /* HeroDetailView.swift */; };
 		521A42BE2BE758ED00197406 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D12BE02BF100384DBF /* ViewRouter.swift */; };
 		521A42BF2BE759F900197406 /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3D52BE02C8800384DBF /* HeroesView.swift */; };
-		521A42C12BE7689300197406 /* MarvelLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 521A42C02BE7689300197406 /* MarvelLibrary */; };
 		521A42C42BE76C5700197406 /* watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A42902BE751FE00197406 /* watchOSApp.swift */; };
 		5230C3792BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C3782BE0102B00384DBF /* IOS_SwiftUI_DiegoAndradesApp.swift */; };
 		5230C37D2BE0102E00384DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5230C37C2BE0102E00384DBF /* Assets.xcassets */; };
@@ -72,6 +71,8 @@
 		5230C47A2BE4160A00384DBF /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C4792BE4160A00384DBF /* SeriesRepository.swift */; };
 		5230C47C2BE4165500384DBF /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C47B2BE4165500384DBF /* SeriesRepositoryProtocol.swift */; };
 		5230C47E2BE41A7300384DBF /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230C47D2BE41A7300384DBF /* SeriesViewModel.swift */; };
+		52A12AAD2BE9551F00EA4043 /* MarvelLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52A12AAC2BE9551F00EA4043 /* MarvelLibrary */; };
+		52A12AAF2BE956A200EA4043 /* MarvelLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52A12AAE2BE956A200EA4043 /* MarvelLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521A42C12BE7689300197406 /* MarvelLibrary in Frameworks */,
+				52A12AAF2BE956A200EA4043 /* MarvelLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5230C3C62BE025C900384DBF /* MarvelLibrary in Frameworks */,
+				52A12AAD2BE9551F00EA4043 /* MarvelLibrary in Frameworks */,
 				5230C3CD2BE0288E00384DBF /* MarvelLibrary in Frameworks */,
 				5230C3D02BE02AC200384DBF /* MarvelLibrary in Frameworks */,
 			);
@@ -406,7 +408,7 @@
 			);
 			name = "watchOS Watch App";
 			packageProductDependencies = (
-				521A42C02BE7689300197406 /* MarvelLibrary */,
+				52A12AAE2BE956A200EA4043 /* MarvelLibrary */,
 			);
 			productName = "watchOS Watch App";
 			productReference = 521A428E2BE751FE00197406 /* watchOS Watch App.app */;
@@ -431,6 +433,7 @@
 				5230C3C52BE025C900384DBF /* MarvelLibrary */,
 				5230C3CC2BE0288E00384DBF /* MarvelLibrary */,
 				5230C3CF2BE02AC200384DBF /* MarvelLibrary */,
+				52A12AAC2BE9551F00EA4043 /* MarvelLibrary */,
 			);
 			productName = "IOS-SwiftUI.DiegoAndrades";
 			productReference = 5230C3752BE0102B00384DBF /* IOS-SwiftUI.DiegoAndrades.app */;
@@ -490,8 +493,8 @@
 			);
 			mainGroup = 5230C36C2BE0102B00384DBF;
 			packageReferences = (
-				5230C3CE2BE02AC200384DBF /* XCLocalSwiftPackageReference "../MarvelLibrary" */,
 				521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				52A12AAB2BE9551F00EA4043 /* XCRemoteSwiftPackageReference "MarvelLibrary" */,
 			);
 			productRefGroup = 5230C3762BE0102B00384DBF /* Products */;
 			projectDirPath = "";
@@ -975,13 +978,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		5230C3CE2BE02AC200384DBF /* XCLocalSwiftPackageReference "../MarvelLibrary" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../MarvelLibrary;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -991,6 +987,14 @@
 				minimumVersion = 0.9.11;
 			};
 		};
+		52A12AAB2BE9551F00EA4043 /* XCRemoteSwiftPackageReference "MarvelLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diegoao/MarvelLibrary";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -998,11 +1002,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 521A42852BE6C23300197406 /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
-		};
-		521A42C02BE7689300197406 /* MarvelLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5230C3CE2BE02AC200384DBF /* XCLocalSwiftPackageReference "../MarvelLibrary" */;
-			productName = MarvelLibrary;
 		};
 		5230C3C52BE025C900384DBF /* MarvelLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1014,6 +1013,16 @@
 		};
 		5230C3CF2BE02AC200384DBF /* MarvelLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = MarvelLibrary;
+		};
+		52A12AAC2BE9551F00EA4043 /* MarvelLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52A12AAB2BE9551F00EA4043 /* XCRemoteSwiftPackageReference "MarvelLibrary" */;
+			productName = MarvelLibrary;
+		};
+		52A12AAE2BE956A200EA4043 /* MarvelLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52A12AAB2BE9551F00EA4043 /* XCRemoteSwiftPackageReference "MarvelLibrary" */;
 			productName = MarvelLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

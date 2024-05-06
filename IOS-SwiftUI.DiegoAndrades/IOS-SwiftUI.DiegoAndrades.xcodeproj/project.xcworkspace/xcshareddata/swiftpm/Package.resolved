@@ -1,6 +1,15 @@
 {
-  "originHash" : "fa7ed9d26dcfecb422485189c2725deccb90a459eb81f357c0171e7c887009bb",
+  "originHash" : "a5b2e30a19a2ffbabd59f754bb3566783e4d483704b11b4147e4be457ffa8b86",
   "pins" : [
+    {
+      "identity" : "marvellibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/diegoao/MarvelLibrary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "feb711f0f707bee221b29be9804b1e48fc1a8fbe"
+      }
+    },
     {
       "identity" : "viewinspector",
       "kind" : "remoteSourceControl",
